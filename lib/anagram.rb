@@ -5,10 +5,12 @@ class Anagram
   def initialize(word)
     @word=word
   end
+  #defining our own match
   def match(array_possible_anagrams)
     matching_words=[]
     array_possible_anagrams.each do |possible_match|
-      
+
     end
   end
+  
 end
