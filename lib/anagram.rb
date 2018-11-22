@@ -8,7 +8,7 @@ class Anagram
   #defining our own match
   def match(array_possible_anagrams)
     matching_words=[]
-    word_broken=self.split("").sort
+    word_broken=self.word.split("").sort
     array_possible_anagrams.each do |possible|
       possible_match=possible.word
       possible_match_broken=possible_match.split("").sort
