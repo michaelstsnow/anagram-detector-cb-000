@@ -9,7 +9,8 @@ class Anagram
   def match(array_possible_anagrams)
     matching_words=[]
     word_broken=self.split("").sort
-    array_possible_anagrams.each do |possible_match|
+    array_possible_anagrams.each do |possible|
+      possible_match=possible.word
       possible_match_broken=possible_match.split("").sort
       if possible_match_broken == word_broken
         matching_words << possible_match
